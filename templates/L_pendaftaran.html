@@ -124,8 +124,15 @@
         Swal.fire({
           icon: 'success',
           title: 'Gabung Sekarang !',
-          html: '<a href="https://chat.whatsapp.com/DGtcJga4ydUE9BnyWIefyg" target="_blank">Klik disini untuk bergabung ke grup WhatsApp</a>'
-      });
+          text: 'Klik Oke untuk bergabung ke grup WhatsApp',
+          showCancelButton: true,
+          confirmButtonText: 'Oke',
+          cancelButtonText: 'Nanti Saja'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = 'https://chat.whatsapp.com/DGtcJga4ydUE9BnyWIefyg';
+          }
+        });
       } else if (status == "warning") {
         toastr.warning('Gagal Didaftarkan, Coba lagi');
       }

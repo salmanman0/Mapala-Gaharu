@@ -157,7 +157,6 @@
         </div>
     </section>
 
-
     <!-- Pendaftaran -->
     <section class="signup-section d-{{status.stats}}" id="pendaftaran">
         <div class="container px-4 px-lg-5">
@@ -170,13 +169,19 @@
             </div>
         </div>
     </section>
-    
+    {%if status.stats == "flex"%}
     <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5 ">Copyright &copy; Mapala Gaharu | 2024</div>
+        <div class="container px-2 px-lg-1 ">Copyright &copy; Mapala Gaharu | 2024</div>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mapala@bem.pcr.ac.id"><i class="fas fa-envelope mt-3 mx-3 text-white fa-2x"></i></a>
         <a href="https://www.instagram.com/mapalagaharu/"><i class="fa-brands fa-instagram mt-3 text-white fa-2x"></i></i></a>
-
     </footer>
+    {%else%}
+    <footer class="footer small text-center text-white-50 mt-4">
+        <div class="container px-2 px-lg-1 ">Copyright &copy; Mapala Gaharu | 2024</div>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mapala@bem.pcr.ac.id"><i class="fas fa-envelope mt-3 mx-3 text-white fa-2x"></i></a>
+        <a href="https://www.instagram.com/mapalagaharu/"><i class="fa-brands fa-instagram mt-3 text-white fa-2x"></i></i></a>
+    </footer>
+    {%endif%}
     <!-- Footer-->
     
     <!-- Bootstrap core JS-->

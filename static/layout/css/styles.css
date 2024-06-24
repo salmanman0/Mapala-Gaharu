@@ -12868,24 +12868,37 @@ body {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
-
+  #mainNav.navbar-shrink {
+    background-color: rgba(217, 217, 217, 0.8);
+  }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
     transition: transform 0.3s ease;
     color: #ffcc00;
   }
-
+  #mainNav.navbar-shrink .navbar-brand {
+    padding: 0.5rem 0;
+    transition: transform 0.3s ease;
+    color: #000080;
+  }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.6);
   }
-
+  #mainNav.navbar-shrink .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: #000000;
+  }
   #mainNav .nav-link:hover {
     color: #FFCC00;
     transform: scale(1.1);
   }
-
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #000080;
+    transform: scale(1.1);
+  }
   #mainNav .nav-link:active {
     color: #fff;
   }
@@ -12965,8 +12978,9 @@ body {
 @media (max-width: 576px) {
   #mainNav {
     min-height: 3.5rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
   }
+  
   .btn {
     box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
     padding: 1.25rem 5px 1.25rem 5px;
@@ -13150,7 +13164,8 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 1.5rem 0;
+  background-color: #2762AE;
 }
 
 /* ================================================================================== */
